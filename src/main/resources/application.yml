@@ -1,0 +1,14 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    master:
+      jdbc-url: jdbc:postgresql://10.255.163.35:5432/trust-center?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: postgres
+      password: postgres
+    slave:
+      jdbc-url: jdbc:postgresql://10.255.163.35:5432/trust-center?characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: postgres
+      password: postgres
